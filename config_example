@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "user": "wallet_number_one",
+      "url": "stratum+tcp://my_pool.com:4553",
+      "pass": "d=0.2"
+    },
+    {
+      "user": "wallet_number_one",
+      "url": "stratum+tcp://my_pool2.com:4553",
+      "pass": "d=0.2"
+    }
+  ],
+
+  "api-bind-telnet": "0.0.0.0:4068",
+  "api-bind-http": "0.0.0.0:4067",
+  "json-response": false,
+
+  "retries": 3,
+  "retry-pause": 10,
+  "timeout": 180,
+
+  "algo": "lyra2z",
+  "intensity": 20,
+  "hashrate-avr": 30,
+
+  "log-path": "t-rex.log",
+
+  "exit-on-cuda-error": true,
+  "exit-on-connection-lost": false
+}
